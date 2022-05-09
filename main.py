@@ -1,11 +1,8 @@
-# remove highest value from first array, append to second array (reverse int)
-
 def check_32_bit(n):
     if n in range(-2 ** 31, (2 ** 31) -1):
         return True
     else:
         return False
-# this code makes sure that the inputed integer is 32 bit and not 64.
     
 def split_str(str):
     return [char for char in str]
