@@ -9,10 +9,8 @@ def check_32_bit(n):
     
 def split_str(str):
     return [char for char in str]
-# this code splits the characters of the inputed integer in string form.
 
 integer_input = int(input("Input 32-bit number >>> "))
-# this has to be an int at first so that it can be checked if 32 bit.
 
 if check_32_bit(integer_input) == True:
     integer_to_str = str(integer_input)
@@ -25,7 +23,6 @@ if integer_array[0] == "-":
     # print(integer_array)
 else:
     integer_negative = False
-# this code checks if the inputed integer is negative. It then removes the '-' temporarily. 
 
 length_of_array = int(len(integer_array))
 i = length_of_array
@@ -36,7 +33,6 @@ while i > 0:
     reversed_array.insert((len(reversed_array) + 1), integer_array[highest_len])
     # print(reversed_array)
     i -= 1
-# this code broke. Supposed to remove the elements from the first array into the second
 
 if i == 0 and integer_negative == True:
     reversed_array.insert(0, "-")
